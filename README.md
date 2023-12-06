@@ -43,7 +43,7 @@ This project is composed of two entities, the PowerBuilder Workspace and a C# So
 
 Running this project requires the following pieces of software to be present on the machine:
 
-1. [PowerBuilder 2022R2](https://www.appeon.com/products/powerbuilder) 
+1. [PowerBuilder 2022 R2](https://www.appeon.com/products/powerbuilder) 
 2. [.NET Framework 4.8 Runtime ](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) 
 3. [.NET 6 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 

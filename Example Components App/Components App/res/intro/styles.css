@@ -1,0 +1,25 @@
+body {
+    padding: 2em;
+    background-color: #f2f6f9;
+}
+
+div.card {
+    margin-bottom: 1em;
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+html * {
+    font-family: 'Segoe UI' !important;
+}

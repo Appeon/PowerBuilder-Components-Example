@@ -1,0 +1,24 @@
+2023/04/10 15:52:02 ----
+2023/04/10 15:52:17 Convert image to black and white
+2023/04/10 15:52:17 Time: 0
+2023/04/10 15:52:17 Finders search
+2023/04/10 15:52:17 Horizontal Finders count: 120
+2023/04/10 15:52:17 Matched Finders count: 15
+2023/04/10 15:52:17 Remove all unused finders
+2023/04/10 15:52:17 Time: 16
+2023/04/10 15:52:17 Finder: Row: 75, Col: 75, Module: 10.00, Distance: 0.00
+2023/04/10 15:52:17 Finder: Row: 75, Col: 295, Module: 10.00, Distance: 0.00
+2023/04/10 15:52:17 Finder: Row: 295, Col: 75, Module: 10.00, Distance: 0.00
+2023/04/10 15:52:17 Search for QR corners
+2023/04/10 15:52:17 Decode Corner: Top Left:    Finder: Row: 75, Col: 75, Module: 10.00, Distance: 0.00
+2023/04/10 15:52:17 Decode Corner: Top Right:   Finder: Row: 75, Col: 295, Module: 10.00, Distance: 0.00
+2023/04/10 15:52:17 Decode Corner: Bottom Left: Finder: Row: 295, Col: 75, Module: 10.00, Distance: 0.00
+2023/04/10 15:52:17 Initial version number: 3, dimension: 29
+2023/04/10 15:52:17 Format info exact match: 13BE, EC: H, mask: 1
+2023/04/10 15:52:17 Decode QR code using three finders
+2023/04/10 15:52:17 Fixed modules no error
+2023/04/10 15:52:17 No data errors
+2023/04/10 15:52:17 Version: 3, Dim: 29, ErrCorr: H, Generator: 22, Mask: 1, Group1: 2:13, Group2: 0:0
+2023/04/10 15:52:17 Data: PowerBuilder 2022
+2023/04/10 15:52:17 Time: 31
+2023/04/10 19:14:14 ----

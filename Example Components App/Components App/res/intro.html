@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>.NET Assembly Demo Intro</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="bootstrap.min.js"></script>
+
+  <h1 id="powerbuilder-net-demo">PowerBuilder .NET Demo</h1>
+  <p>This application demonstrates the utilization of <a
+      href="https://docs.appeon.com/pb2022/application_techniques/Calling_C_Assembly_in_an_Application.html">PowerBuilder&#39;s
+      .NET Assembly</a> tools in various diverse scenarios</p>
+  <h2 id="basic-usage">Basic Usage</h2>
+  <p>This section contains examples that demonstrate a single aspect of the .NET Assembly integration in PowerBuilder
+  </p>
+  <h3 id="functions">Functions</h3>
+  <p>When an entry in the DataWindow is selected, the ID is passed to a .NET function, and then the details are returned
+    back from .NET through reference arguments and then displayed on the screen.</p>
+  <p>For more technical information on Functions see <a
+      href="https://docs.appeon.com/pb2022/application_techniques/CSharp_vs_PS.html#d0e14648">this documentation
+      page</a>.</p>
+  <h3 id="classes">Classes</h3>
+  <p>Selecting an entry on either DataWindow fetches the corresponding detail information through .NET Objects. It then
+    accesses each object&#39;s properties to extract the data.</p>
+  <p>See more information con Classes and what&#39;s supported <a
+      href="https://docs.appeon.com/pb2022/application_techniques/CSharp_vs_PS.html#d0e14631">here</a>.</p>
+  <h3 id="callbacks">Callbacks</h3>
+  <p>This example calls C# code to take a screenshot of the current screen, and sends it back to PowerBuilder through an
+    Event, passing the Base64-encoded data through the event&#39;s argument.</p>
+  <p>For more information on invoking PowerBuilder events from .NET see <a
+      href="https://docs.appeon.com/pb2022/application_techniques/Triggering_PowerScript_events_from_code.html">here</a>.
+  </p>
+  <h3 id="handling-unsupported-features">Handling Unsupported Features</h3>
+  <p>Takes features unsupported by PowerBuilder&#39;s .NET Assembly tools such as Enums and Generics, and wraps them
+    around a simpler classes that the tools can use.</p>
+  <h2 id="common-scenarios">Common scenarios</h2>
+  <p>These examples use multiple of the previously demonstrated techniques to implement a more complex and real-life use
+    case</p>
+  <h3 id="get-os-info">Get OS Info</h3>
+  <p>Access Windows Managment Instrumentation classes and running processes through C#, and displays this info on a
+    PowerBuilder UI.</p>
+  <h3 id="qr-code">QR Code</h3>
+  <p>Interfaces with the <a href="https://github.com/codebude/QRCoder">QR Coder</a> .NET Library to generate QR Codes of
+    different sizes and error correction levels.</p>
+  <h3 id="ftp">FTP</h3>
+  <p>Uses the <a href="https://github.com/robinrodricks/FluentFTP">FluentFTP</a> .NET library to upload/download files
+    from an FTP Server.</p>
+  <h3 id="xml-editor">XML Editor</h3>
+  <p>Easily edit and visualize XML files by using .NET&#39;s <a
+      href="https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-7.0">XmlDocument</a> classes
+    and the rest of the framework&#39;s utilities.</p>
+  <h3 id="office-document-writer">Office Document Writer</h3>
+  <p>Use .NET&#39;s <a href="https://github.com/nissl-lab/npoi">NPOI</a> library to read/write DOCX and XLSX documents.
+  </p>
+  <h3 id="dde">DDE</h3>
+  <p>Use <a href="https://github.com/anphonic/NDde">NDDE</a> to implement a basic Client/Server application. This
+    segment also adapts the DDE Demo from PowerBuilder&#39;s Example App to use NDDE as the backbone.</p>
+  <p>This demo also includes objects to replace PowerBuilder&#39;s DDE implementation with NDDE without having to
+    rewrite the entire application.</p>
+  <h3 id="openai">OpenAI</h3>
+  <p>Simple OpenAI frontend that uses <a href="https://github.com/betalgo/openai">betalgo/openai</a> for communicating
+    with OpenAI&#39;s Chat Completions and Image Generation APIs. To use OpenAI&#39;s APIs you require an OpenAI
+    account, please go <a href="https://platform.openai.com/account">here</a> to create one. Then you will need an <a
+      href="https://platform.openai.com/account/api-keys">API Key</a> and (optionally) an <a
+      href="https://platform.openai.com/account/org-settings">Organization ID</a>. Since the utilization of OpenAI&#39;s
+    API might incur on monetary costs, its access is not enabled by default, and instead simulated outputs are provided
+    (previously generated from OpenAI)</p>
+
+</body>
+
+</html>

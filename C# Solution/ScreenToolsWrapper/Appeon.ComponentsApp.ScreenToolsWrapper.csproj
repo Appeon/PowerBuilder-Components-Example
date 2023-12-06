@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+	<SelfContained>true</SelfContained>
+	<PlatformTarget>x86</PlatformTarget>
+	<SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerBuilderEventInvoker.DotNetFramework\Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNetFramework.csproj" />
+    <ProjectReference Include="..\ScreenTools\Appeon.ComponentsApp.ScreenTools.csproj" />
+  </ItemGroup>
+
+</Project>

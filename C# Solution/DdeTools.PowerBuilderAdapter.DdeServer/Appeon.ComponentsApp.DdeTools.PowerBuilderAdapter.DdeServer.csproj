@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Specshell.NDde" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DdeTools.Common\Appeon.ComponentsApp.DdeTools.Common.csproj" />
+    <ProjectReference Include="..\DdeTools.PowerBuilderAdapter.Common\Appeon.ComponentsApp.DdeTools.PowerBuilderAdapter.Common.csproj" />
+    <ProjectReference Include="..\PowerBuilderEventInvoker.DotNet\Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet.csproj" />
+  </ItemGroup>
+
+</Project>

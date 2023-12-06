@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>.NET Assembly Demo QuickStart</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body id="preview">
+  <h2 class="code-line" data-line-start=0 data-line-end=1><a
+      id="QuickStart__Import_a_NET_DLL_into_PowerBuilder_0"></a>README - Import a .NET DLL into PowerBuilder
+  </h2>
+  <p class="has-line-data" data-line-start="2" data-line-end="3">You can use the <em>.NET DLL Importer</em> tool to
+    quickly enable the current PowerBuilder application to use .NET DLLs:</p>
+  <div class="card">
+    <div class="card-body">
+
+
+      <table class="table table-sm">
+        <thead>
+          <tr>
+            <th>1. Open the .NET DLL Importer Tool</th>
+            <th style="text-align:center"></th>
+            <th>2. Select the file and configure the import settings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/netdllimport.png" alt="Opening the .NET DLL Importer"></td>
+            <td style="text-align:center; vertical-align: middle;">➡️</td>
+            <td><img src="img/netdllimporter_window.png" alt="Configuring the import settings"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p class="has-line-data" data-line-start="8" data-line-end="9">New NVOs are added to the project:</p>
+  <p class="has-line-data" data-line-start="10" data-line-end="11"><img src="img/objectexplorer_nvos.png"
+      alt="objectexplorer_nvos.png"></p>
+  <div class="card">
+    <div class="card-body">
+
+      <p class="has-line-data" data-line-start="12" data-line-end="13">You can now use these objects to invoke the .NET
+        code:</p>
+      <pre class="pre-scrollable"><code class="has-line-data" data-line-start="15" data-line-end="24" class="language-powerquery">nvo_stringextensions inv_stringExtensions
+inv_stringExtensions = create nvo_stringextensions
+
+string ls_result
+ls_result = inv_stringExtensions.of_replace(&quot;Using .NET Code from ;&quot;, &quot;;&quot;, &quot;PowerBuilder&quot;)
+// ls_result = &quot;Using .NET Code from PowerBuilder&quot;
+
+destroy inv_stringExtensions</code></pre>
+    </div>
+  </div>
+
+</body>
+
+</html>

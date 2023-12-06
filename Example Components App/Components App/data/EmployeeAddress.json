@@ -1,0 +1,138 @@
+[
+    {
+        "EmployeeId": 274,
+        "AddressLine1": "2427 Notre Dame Ave.",
+        "AddressLine2": null,
+        "City": "Redmond",
+        "StateProvince": "Washington",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 275,
+        "AddressLine1": "8154 Via Mexico",
+        "AddressLine2": null,
+        "City": "Detroit",
+        "StateProvince": "Michigan",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 276,
+        "AddressLine1": "2487 Riverside Drive",
+        "AddressLine2": null,
+        "City": "Nevada",
+        "StateProvince": "Utah",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 277,
+        "AddressLine1": "80 Sunview Terrace",
+        "AddressLine2": null,
+        "City": "Duluth",
+        "StateProvince": "Minnesota",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 278,
+        "AddressLine1": "10203 Acorn Avenue",
+        "AddressLine2": null,
+        "City": "Calgary",
+        "StateProvince": "Alberta",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 279,
+        "AddressLine1": "8291 Crossbow Way",
+        "AddressLine2": null,
+        "City": "Memphis",
+        "StateProvince": "Tennessee",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 280,
+        "AddressLine1": "636 Vine Hill Way",
+        "AddressLine2": null,
+        "City": "Portland",
+        "StateProvince": "Oregon",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 281,
+        "AddressLine1": "5725 Glaze Drive",
+        "AddressLine2": null,
+        "City": "San Francisco",
+        "StateProvince": "California",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 282,
+        "AddressLine1": "9100 Sheppard Avenue North",
+        "AddressLine2": null,
+        "City": "Ottawa",
+        "StateProvince": "Ontario",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 283,
+        "AddressLine1": "2284 Azalea Avenue",
+        "AddressLine2": null,
+        "City": "Bellevue",
+        "StateProvince": "Washington",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 284,
+        "AddressLine1": "3997 Via De Luna",
+        "AddressLine2": null,
+        "City": "Cambridge",
+        "StateProvince": "Massachusetts",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 285,
+        "AddressLine1": "7484 Roundtree Drive",
+        "AddressLine2": null,
+        "City": "Bothell",
+        "StateProvince": "Washington",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 286,
+        "AddressLine1": "34 Waterloo Road",
+        "AddressLine2": null,
+        "City": "Melbourne",
+        "StateProvince": "Victoria",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 287,
+        "AddressLine1": "5009 Orange Street",
+        "AddressLine2": null,
+        "City": "Renton",
+        "StateProvince": "Washington",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 288,
+        "AddressLine1": "Pascalstr 951",
+        "AddressLine2": null,
+        "City": "Berlin",
+        "StateProvince": "Hamburg",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 289,
+        "AddressLine1": "Downshire Way",
+        "AddressLine2": null,
+        "City": "Cambridge",
+        "StateProvince": "England",
+        "Type": "Home"
+    },
+    {
+        "EmployeeId": 290,
+        "AddressLine1": "94, rue Descartes",
+        "AddressLine2": null,
+        "City": "Bordeaux",
+        "StateProvince": "Gironde",
+        "Type": "Home"
+    }
+]

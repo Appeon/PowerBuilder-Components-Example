@@ -1,0 +1,55 @@
+[
+    {
+        "Thumbnail": "xlsx\\tableExportTemplate_AddressAndPhoneList.png",
+        "TemplateFile": "xlsx\\tableExportTemplate_AddressAndPhoneList.xltx",
+        "Name": "Address and Phone List",
+        "TemplateType": 1,
+        "ThumbnailWidth": 1127,
+        "ThumbnailHeight": 393 
+    },
+    {
+        "Thumbnail": "xlsx\\tableExportTemplate_LoanAnalysis.png",
+        "TemplateFile": "xlsx\\tableExportTemplate_LoanAnalysis.xltx",
+        "Name": "Loan Analysis",
+        "TemplateType": 1,
+        "ThumbnailWidth": 938,
+        "ThumbnailHeight": 375
+    },
+    {
+        "Thumbnail": "xlsx\\tableExportTemplate_SalesLead.png",
+        "TemplateFile": "xlsx\\tableExportTemplate_SalesLead.xltx",
+        "Name": "Sales Lead",
+        "TemplateType": 1,
+        "ThumbnailWidth": 981,
+        "ThumbnailHeight": 468 
+    },
+    {
+        "Thumbnail": "docx\\modern_initials_cover.png",
+        "TemplateFile": "docx\\modern_initials_cover.dotx",
+        "Name": "Modern Initals Cover",
+        "TemplateType": 2,
+        "ThumbnailWidth": 817,
+        "ThumbnailHeight": 333 
+    },
+    {
+        "Thumbnail": "docx\\daily_lesson_planner.png",
+        "TemplateFile": "docx\\daily_lesson_planner.dotx",
+        "Name": "Daily Lesson Planner",
+        "TemplateType": 2,
+        "ThumbnailWidth": 815,
+        "ThumbnailHeight": 506 
+    },
+    {
+        "Thumbnail": "docx\\pinstripes_fax_cover.png",
+        "TemplateFile": "docx\\pinstripes_fax_cover.dotx",
+        "Name": "Pinstripes fax cover",
+        "TemplateType": 2,
+        "ThumbnailWidth": 818,
+        "ThumbnailHeight": 536 
+    }
+]
+
+
+
+
+

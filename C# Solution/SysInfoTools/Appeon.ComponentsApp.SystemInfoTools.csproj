@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+	<SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Management" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PowerBuilderEventInvoker.DotNetFramework\Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNetFramework.csproj" />
+  </ItemGroup>
+
+</Project>

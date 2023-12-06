@@ -1,0 +1,42 @@
+{
+    "meta-info": {
+        "version": "21.0.0.1311"
+    },
+    "u_statictext": {
+        "drawing": true,
+        "border": 0,
+        "background-transparent": true,
+        "normal-state": {
+            "background-color": "#FFFFFF",
+            "text-font": {
+                "color": "#999999"
+            }
+        },
+        "disabled-state": {
+            "background-color": "#FFFFFF",
+            "text-font": {
+                "color": "#999999"
+            },
+            "background-transparent" : true
+        }
+    },
+    "u_themablestatictext": {
+        "drawing": true,
+        "border": 0,
+        "background-transparent": true,
+        "normal-state": {
+            "background-color": "#FFFFFF",
+            "text-font": {
+                "color": "#999999"
+            },
+            "background-transparent" : true
+        },
+        "disabled-state": {
+            "background-color": "#FFFFFF",
+            "text-font": {
+                "color": "#999999"
+            },
+            "background-transparent" : true
+        }
+    }
+}

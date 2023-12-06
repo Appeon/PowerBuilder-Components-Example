@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <title>.NET Assembly Demo QuickStart</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2 id='readme---import-a-net-dll-into-powerbuilder'>README - Import a .NET DLL into PowerBuilder</h2>
+1. You can use the <em>.NET DLL Importer</em> tool to quickly enable the current PowerBuilder application to
+            use .NET DLLs
+
+    
+    <figure class='table-figure'>
+        <table>
+            <tbody>
+                <tr>
+                    <td style='text-align:center;'><img src="img\netdllimport.png" referrerpolicy="no-referrer"
+                            alt="Opening the .NET DLL Importer"></td>
+                    <td style='text-align:center;'>️</td>
+                    <td style='text-align:center;'><img src="img\netdllimporter_window.png" referrerpolicy="no-referrer"
+                            alt="Configuring the import settings"></td>
+                </tr>
+                <tr>
+                    <td style='text-align:center;'>
+                        <font size="2">Open the .NET DLL Importer Tool</font>
+                    </td>
+                    <td style='text-align:center;'><div class="px-5"/></td>
+                    <td style='text-align:center;'>
+                        <font size="2">Select the file and configure the import settings</font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+   
+        2. New NVOs are added to the project, these objects wrap around the DLLs to make them usable from PowerBuilder:
+    <p><img src="img/objectexplorer_nvos.png" referrerpolicy="no-referrer" alt="objectexplorer_nvos.png"></p>
+    
+        3. You can now use these objects to invoke the .NET code:
+
+    <pre><code>nvo_stringextensions inv_stringExtensions
+inv_stringExtensions = create nvo_stringextensions
+
+string ls_result
+ls_result = inv_stringExtensions.of_replace(&quot;Using .NET Code from ;&quot;, &quot;;&quot;, &quot;PowerBuilder&quot;)
+// ls_result&#39;s value is now &quot;Using .NET Code from PowerBuilder&quot;
+
+destroy inv_stringExtensions
+</code></pre>
+</body>
+
+</html>

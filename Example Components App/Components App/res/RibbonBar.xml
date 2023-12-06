@@ -1,0 +1,86 @@
+<RibbonBar BuiltinTheme="0" Font="FaceName:Segoe UI; TextSize:10">
+  <RibbonItems>
+    <ApplicationButton Text="Application" Enabled="true" Tag="" Visible="true">
+      <ApplicationMenu>
+        <Master>
+          <Item Text="Edit RibbonBar" Enabled="true" Tag="editRibbonBar" Visible="false" PictureName="res/material/Handling.png" Checked="false" Type="0" Selected="" Clicked="ue_editRibbonBar" Shortcut="" />
+          <Item Text="Open Intro page" Enabled="true" Tag="" Visible="true" PictureName="AboutBig!" Checked="false" Type="0" Selected="" Clicked="ue_openinfoclicked" Shortcut=""/>
+          <Item Text="Exit" Enabled="true" Tag="" Visible="true" PictureName="ExitBig!" Checked="false" Type="0" Selected="" Clicked="ue_exitClicked" Shortcut="">
+          </Item>
+        </Master>
+        <Recent Title="">
+          <Item Text="" Enabled="true" Tag="" Visible="true" PictureName="" Checked="false" Type="2" Selected="" Clicked="" Shortcut="" />
+        </Recent>
+      </ApplicationMenu>
+    </ApplicationButton>
+    <Categories>
+      <Category Text="Home" Enabled="true" Tag="" Visible="true">
+        <Panel Text="Windows" Enabled="true" Tag="" Visible="true" PictureName="SwitchWindowsSmall!">
+          <LargeButton Text="Windows" Enabled="true" Tag="WindowList" Visible="true" PictureName="SwitchWindowsBig!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="" Selected="" Shortcut="">
+            <Menu>
+              <Item Text="" Enabled="true" Tag="WindowListPlaceholder" Visible="false" PictureName="" Checked="false" Type="0" Selected="" Clicked="" Shortcut="">
+              </Item>
+            </Menu>
+          </LargeButton>
+          <Group Tag="" Enabled="true" NewLine="true" Visible="true">
+            <SmallButton Text="Close All" Enabled="true" Tag="CloseAll" Visible="true" PictureName="CloseAllSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_closeAll" Selected="" Shortcut="">
+            </SmallButton>
+          </Group>
+          <Group Tag="" Enabled="true" NewLine="true" Visible="true">
+            <SmallButton Text="Close" Enabled="true" Tag="CloseOne" Visible="true" PictureName="CloseSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_closeOne" Selected="" Shortcut="">
+            </SmallButton>
+          </Group>
+        </Panel>
+        <Panel Text="Basic Usage" Enabled="true" Tag="anchor" Visible="true" PictureName="ScriptYes1!">
+          <LargeButton Text="Functions" Tag="w_functions" PictureName="res\RibbonBar Icon-png\32x32\AutoSumBig.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="Classes" Tag="w_classes" PictureName="res\RibbonBar Icon-png\32x32\InvertSelectionBig.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="Callbacks" Tag="w_callbacks" PictureName="res\RibbonBar Icon-png\32x32\ReloginBig.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+        </Panel>
+        <Panel Text="Common Scenarios" Enabled="true" Tag="anchor" Visible="true" PictureName="Custom042a!">
+          <LargeButton Text="QR Code" Tag="w_qrcodegenerator_main" PictureName="res\Material\qr_code_2.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="FTP" Tag="w_ftpupload" PictureName="res\Material\upload.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="XML Editor" Tag="w_xmleditor" PictureName="res\Material\outline_code_black_24dp.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="DDE" Tag="w_ddedemo" PictureName="res\Material\memory.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="OpenAI" Tag="w_openai_demo" PictureName="res\RibbonBar Icon-png\32x32\CommentBig.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="Get OS Info" Tag="w_systeminfo" PictureName="res\icons\OS-Info.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+        </Panel>
+        <Panel Text="Actions" Enabled="true" Tag="actionsPanel" Visible="false" PictureName="ActionsSmall!">
+          <Group Tag="" Enabled="true" NewLine="true" Visible="true">
+            <SmallButton Text="Add" Enabled="true" Tag="add" Visible="true" PictureName="AddSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="Delete" Enabled="true" Tag="delete" Visible="true" PictureName="DeleteSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="Edit" Enabled="true" Tag="edit" Visible="true" PictureName="EditSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="Save" Enabled="true" Tag="save" Visible="true" PictureName="SaveSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+          </Group>
+          <Group Tag="" Enabled="true" NewLine="true" Visible="true">
+            <SmallButton Text="Export" Enabled="true" Tag="export" Visible="true" PictureName="ExportSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="Cancel" Enabled="true" Tag="cancel" Visible="true" PictureName="UndoSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+          </Group>
+        </Panel>
+        <Panel Text="View" Enabled="true" Tag="ViewPanel" Visible="false" PictureName="">
+          <Group Tag="" Enabled="true" NewLine="true" Visible="true">
+            <SmallButton Text="" Enabled="true" Tag="0" Visible="true" PictureName="NavFirstSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_windownavigationclicked" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="" Enabled="true" Tag="-1" Visible="true" PictureName="NavPrevSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_windownavigationclicked" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="" Enabled="true" Tag="1" Visible="true" PictureName="NavNextSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_windownavigationclicked" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="" Enabled="true" Tag="2" Visible="true" PictureName="NavLastSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_windownavigationclicked" Selected="" Shortcut="">
+            </SmallButton>
+          </Group>
+          <Group Tag="" Enabled="true" NewLine="true" Visible="true">
+            <SmallButton Text="" Enabled="true" Tag="sort" Visible="true" PictureName="SortSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="ue_dataAction" Selected="" Shortcut="">
+            </SmallButton>
+            <SmallButton Text="" Enabled="true" Tag="filter" Visible="true" PictureName="FilterSmall!" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Clicked="" Selected="ue_dataAction" Shortcut="">
+            </SmallButton>
+          </Group>
+        </Panel>
+      </Category>
+    </Categories>
+  </RibbonItems>
+</RibbonBar>

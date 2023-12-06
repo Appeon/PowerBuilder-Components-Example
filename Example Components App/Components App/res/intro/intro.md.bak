@@ -1,0 +1,63 @@
+# PowerBuilder .NET Demo
+
+This application demonstrates the utilization of [PowerBuilder's .NET Assembly](https://docs.appeon.com/pb2022/application_techniques/Calling_C_Assembly_in_an_Application.html) tools in various diverse scenarios
+
+## Basic Usage
+
+This section contains examples that demonstrate a single aspect of the .NET Assembly integration in PowerBuilder
+
+### Functions
+
+When an entry in the DataWindow is selected, the ID is passed to a .NET function, and then the details are returned back from .NET through reference arguments and then displayed on the screen.
+
+For more technical information on Functions see [this documentation page](https://docs.appeon.com/pb2022/application_techniques/CSharp_vs_PS.html#d0e14648).
+
+### Classes
+
+Selecting an entry on either DataWindow fetches the corresponding detail information through .NET Objects. It then accesses each object's properties to extract the data.
+
+See more information con Classes and what's supported [here](https://docs.appeon.com/pb2022/application_techniques/CSharp_vs_PS.html#d0e14631).
+
+### Callbacks
+
+This example calls C# code to take a screenshot of the current screen, and sends it back to PowerBuilder through an Event, passing the Base64-encoded data through the event's argument.
+
+For more information on invoking PowerBuilder events from .NET see [here](https://docs.appeon.com/pb2022/application_techniques/Triggering_PowerScript_events_from_code.html).
+
+### Handling Unsupported Features
+
+Takes features unsupported by PowerBuilder's .NET Assembly tools such as Enums and Generics, and wraps them around a simpler classes that the tools can use.
+
+## Common scenarios
+
+These examples use multiple of the previously demonstrated techniques to implement a more complex and real-life use case
+
+### Get OS Info
+
+Access Windows Managment Instrumentation classes and running processes through C#, and displays this info on a PowerBuilder UI.
+
+### QR Code
+
+Interfaces with the [QR Coder](https://github.com/codebude/QRCoder) .NET Library to generate QR Codes of different sizes and error correction levels.
+
+### FTP
+
+Uses the [FluentFTP](https://github.com/robinrodricks/FluentFTP) .NET library to upload/download files from an FTP Server.
+
+### XML Editor
+
+Easily edit and visualize XML files by using .NET's [XmlDocument](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmldocument?view=net-7.0) classes and the rest of the framework's utilities.
+
+### Office Document Writer
+
+Use .NET's [NPOI](https://github.com/nissl-lab/npoi) library to read/write DOCX and XLSX documents.
+
+### DDE
+
+Use [NDDE](https://github.com/anphonic/NDde) to implement a basic Client/Server application. This segment also adapts the DDE Demo from PowerBuilder's Example App to use NDDE as the backbone.
+
+This demo also includes objects to replace PowerBuilder's DDE implementation with NDDE without having to rewrite the entire application.
+
+### OpenAI
+
+Simple OpenAI frontend that uses [betalgo/openai](https://github.com/betalgo/openai) for communicating with OpenAI's Chat Completions and Image Generation APIs. To use OpenAI's APIs you require an OpenAI account, please go [here](https://platform.openai.com/account) to create one. Then you will need an [API Key](https://platform.openai.com/account/api-keys) and (optionally) an [Organization ID](https://platform.openai.com/account/org-settings). Since the utilization of OpenAI's API might incur on monetary costs, its access is not enabled by default, and instead simulated outputs are provided (previously generated from OpenAI)

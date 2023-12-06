@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Appeon.ComponentsApp.QRDecoderWrapper/1.0.0": {
+        "dependencies": {
+          "QRCodeDecoderLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Appeon.ComponentsApp.QRDecoderWrapper.dll": {}
+        }
+      },
+      "QRCodeDecoderLibrary/1.0.0": {
+        "runtime": {
+          "QRCodeDecoderLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Appeon.ComponentsApp.QRDecoderWrapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QRCodeDecoderLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

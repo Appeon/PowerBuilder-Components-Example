@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RibbonBarXmlTools.PbWrapper/1.0.0": {
+        "dependencies": {
+          "RibbonBarXmlTools": "1.0.0",
+          "RibbonBarXmlTools.Models": "1.0.0"
+        },
+        "runtime": {
+          "RibbonBarXmlTools.PbWrapper.dll": {}
+        }
+      },
+      "RibbonBarXmlTools/1.0.0": {
+        "dependencies": {
+          "RibbonBarXmlTools.Helpers": "1.0.0"
+        },
+        "runtime": {
+          "RibbonBarXmlTools.dll": {}
+        }
+      },
+      "RibbonBarXmlTools.Helpers/1.0.0": {
+        "runtime": {
+          "RibbonBarXmlTools.Helpers.dll": {}
+        }
+      },
+      "RibbonBarXmlTools.Models/1.0.0": {
+        "dependencies": {
+          "RibbonBarXmlTools.Helpers": "1.0.0"
+        },
+        "runtime": {
+          "RibbonBarXmlTools.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RibbonBarXmlTools.PbWrapper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RibbonBarXmlTools/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RibbonBarXmlTools.Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RibbonBarXmlTools.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

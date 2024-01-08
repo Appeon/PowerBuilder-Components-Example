@@ -3,8 +3,8 @@
     <ApplicationButton Text="Application" Enabled="true" Tag="" Visible="true">
       <ApplicationMenu>
         <Master>
-          <Item Text="Edit RibbonBar" Enabled="true" Tag="editRibbonBar" Visible="false" PictureName="res/material/Handling.png" Checked="false" Type="0" Selected="" Clicked="ue_editRibbonBar" Shortcut="" />
-          <Item Text="Open Intro page" Enabled="true" Tag="" Visible="true" PictureName="AboutBig!" Checked="false" Type="0" Selected="" Clicked="ue_openinfoclicked" Shortcut=""/>
+          <Item Text="Edit RibbonBar" Enabled="true" Tag="editRibbonBar" Visible="true" PictureName="res/material/Handling.png" Checked="false" Type="0" Selected="" Clicked="ue_editRibbonBar" Shortcut="" />
+          <Item Text="Open Intro page" Enabled="true" Tag="" Visible="true" PictureName="AboutBig!" Checked="false" Type="0" Selected="" Clicked="ue_openinfoclicked" Shortcut="" />
           <Item Text="Exit" Enabled="true" Tag="" Visible="true" PictureName="ExitBig!" Checked="false" Type="0" Selected="" Clicked="ue_exitClicked" Shortcut="">
           </Item>
         </Master>
@@ -38,10 +38,12 @@
         </Panel>
         <Panel Text="Common Scenarios" Enabled="true" Tag="anchor" Visible="true" PictureName="Custom042a!">
           <LargeButton Text="QR Code" Tag="w_qrcodegenerator_main" PictureName="res\Material\qr_code_2.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="Barcode" Tag="w_barcodegen" PictureName="res\icons\barcode-large.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
           <LargeButton Text="FTP" Tag="w_ftpupload" PictureName="res\Material\upload.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
           <LargeButton Text="XML Editor" Tag="w_xmleditor" PictureName="res\Material\outline_code_black_24dp.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
           <LargeButton Text="DDE" Tag="w_ddedemo" PictureName="res\Material\memory.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
           <LargeButton Text="OpenAI" Tag="w_openai_demo" PictureName="res\RibbonBar Icon-png\32x32\CommentBig.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
+          <LargeButton Text="Send SMS" Tag="w_sendsmspage" PictureName="res\RibbonBar Icon-png\32x32\EmailBig.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
           <LargeButton Text="Get OS Info" Tag="w_systeminfo" PictureName="res\icons\OS-Info.png" Clicked="ue_sheetSelectorClicked" Enabled="true" Visible="true" DefaultCommand="true" Checked="false" PowerTipText="" PowerTipDescription="" Selected="" Shortcut="" />
         </Panel>
         <Panel Text="Actions" Enabled="true" Tag="actionsPanel" Visible="false" PictureName="ActionsSmall!">

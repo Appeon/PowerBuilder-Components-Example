@@ -34,7 +34,7 @@
         "disabled-state": {
             "background-color": "#FFFFFF",
             "text-font": {
-                "color": "#999999"
+                "color": "#CCCCCC"
             },
             "background-transparent" : true
         }

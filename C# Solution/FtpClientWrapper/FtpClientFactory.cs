@@ -31,6 +31,7 @@ namespace Appeon.ComponentsApp.FtpClientWrapper
                     BulkListing = true,
                     LogUserName = true,
                     LogHost = true,
+                    
 
                 });
 

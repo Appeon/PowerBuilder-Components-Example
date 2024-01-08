@@ -1,6 +1,6 @@
 # PowerBuilder-Components-Example 
 
-This application demonstrates the utilization of [PowerBuilder 2022 R2](https://www.appeon.com/products/powerbuilder)'s .NET Assembly integration features such as: object instantiation, function calling with automatic native-type conversion and callback invocation to implement features not available in PowerBuilder (e.g. FTP File Transfer, QR Code generation, and more).
+This application demonstrates the utilization of [PowerBuilder 2022 R3](https://www.appeon.com/products/powerbuilder)'s .NET Assembly integration features such as: object instantiation, function calling with automatic native-type conversion and callback invocation to implement features not available in PowerBuilder (e.g. FTP File Transfer, QR Code generation, and more).
 
 ## Project Structure
 
@@ -10,6 +10,7 @@ This project is composed of two entities, the PowerBuilder Workspace and a C# So
 .
 ├── C# Solution
 │   ├── Appeon.Windows.PBInterop
+│   ├── BarcodeGeneration
 │   ├── CSharpFunctions
 │   ├── ClassesDemo
 │   ├── DdeTools
@@ -33,6 +34,9 @@ This project is composed of two entities, the PowerBuilder Workspace and a C# So
 │   ├── QRDecoderWrapper
 │   ├── ScreenTools
 │   ├── ScreenToolsWrapper
+│   ├── SmsMessaging.Common
+│   ├── SmsMessaging.Twilio
+│   ├── ScreenToolsWrapper
 │   ├── SysInfoTools
 │   └── XmlEditor
 └── Example Components App
@@ -43,7 +47,7 @@ This project is composed of two entities, the PowerBuilder Workspace and a C# So
 
 Running this project requires the following pieces of software to be present on the machine:
 
-1. [PowerBuilder 2022 R2](https://www.appeon.com/products/powerbuilder) 
+1. [PowerBuilder 2022 R3](https://www.appeon.com/products/powerbuilder) 
 2. [.NET Framework 4.8 Runtime ](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) 
 3. [.NET 6 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
@@ -84,6 +88,10 @@ This view sets up a callback that is then passed to the .NET Assembly, that is t
 
 Utilizes [QrCoder](https://github.com/codebude/QRCoder), a popular C# QR Code generation library and wraps it around a compatibility layer to make it usable from PowerBuilder.
 
+#### Barcode
+
+Uses [barcodelib](https://github.com/barnhill/barcodelib) to generate barcodes of several standards and uses them in PowerBuilder
+
 #### FTP
 
 Transfer files to and from an FTP server by making use of C#'s [FluentFTP](https://github.com/robinrodricks/FluentFTP) Library.
@@ -100,6 +108,10 @@ Use [NDDE](https://github.com/anphonic/NDde) on C# to communicate with applicati
 
 Make use of OpenAI's Completions and Image Generation features through a C# [OpenAI](https://github.com/betalgo/openai) library.
 
+#### Send SMS
+
+Sends SMS messages by using [Twilio's C# APIs](https://github.com/twilio/twilio-csharp).
+
 #### Get OS Info
 
 Uses Windows's Management Instrumentation's APIs to retrieve device and process information.
@@ -109,6 +121,7 @@ Uses Windows's Management Instrumentation's APIs to retrieve device and process 
 The following are the C# solutions located in the .NET folder and their respective role:
 
 - Appeon.Windows.PBInterop - Contains C# bridges to Windows APIs.
+- BarcodeGeneration - Wraps barcodelib utils so it can be used from PowerBuilder
 - CSharpFunctions - Demonstrates calling C# functions from PowerBuilder.
 - ClassesDemo - Demonstrates working with C# classes from PowerBuilder.
 - DdeTools - Contains the Factory object for the DdeClient and DdeServer objects.
@@ -130,5 +143,7 @@ The following are the C# solutions located in the .NET folder and their respecti
 - PbExtensions.Windows - Same as PbExtensions, but for Windows-only features.
 - ScreenTools - Tools for taking screenshots.
 - ScreenToolsWrapper - PB Wrapper for ScreenTools.
+- SmsMessaging.Common - Interface abstraction for a very simplistic messaging service
+- SmsMessaging.Twilio - Twilio implementation of the messaging service
 - SysInfoTools - Tools for retrieving system process and resource utilization percentage.
 - XmlEditor - Tools for handling XML documents and its nodes.

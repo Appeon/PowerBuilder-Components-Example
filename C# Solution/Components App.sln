@@ -53,6 +53,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Appeon.Windows.PBInterop", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Appeon.PbExtensions.Windows", "PbExtensions.Windows\Appeon.PbExtensions.Windows.csproj", "{BE8E27B3-7EA9-4E2F-B3A8-CAC0AE0BFE52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appeon.ComponentsApp.SmsMessaging.Common", "SmsMessaging.Common\Appeon.ComponentsApp.SmsMessaging.Common.csproj", "{0457B5CC-6DDF-4A85-88EA-9084D43A3AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appeon.ComponentsApp.SmsMessaging.Twilio", "SmsMessaging.Twilio\Appeon.ComponentsApp.SmsMessaging.Twilio.csproj", "{71CA0A7C-E2A5-4E7D-B567-5B3C19062369}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Appeon.ComponentsApp.BarcodeGeneration", "BarcodeGeneration\Appeon.ComponentsApp.BarcodeGeneration.csproj", "{A0075AD5-C7ED-43D3-B7A6-EAEFD2C50DA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +161,18 @@ Global
 		{BE8E27B3-7EA9-4E2F-B3A8-CAC0AE0BFE52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE8E27B3-7EA9-4E2F-B3A8-CAC0AE0BFE52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE8E27B3-7EA9-4E2F-B3A8-CAC0AE0BFE52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0457B5CC-6DDF-4A85-88EA-9084D43A3AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0457B5CC-6DDF-4A85-88EA-9084D43A3AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0457B5CC-6DDF-4A85-88EA-9084D43A3AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0457B5CC-6DDF-4A85-88EA-9084D43A3AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71CA0A7C-E2A5-4E7D-B567-5B3C19062369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CA0A7C-E2A5-4E7D-B567-5B3C19062369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CA0A7C-E2A5-4E7D-B567-5B3C19062369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CA0A7C-E2A5-4E7D-B567-5B3C19062369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0075AD5-C7ED-43D3-B7A6-EAEFD2C50DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0075AD5-C7ED-43D3-B7A6-EAEFD2C50DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0075AD5-C7ED-43D3-B7A6-EAEFD2C50DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0075AD5-C7ED-43D3-B7A6-EAEFD2C50DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

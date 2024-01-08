@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using System.Security;
+using System.Xml;
 
 namespace Appeon.ComponentsApp.XmlEditor
 {
@@ -196,17 +197,21 @@ namespace Appeon.ComponentsApp.XmlEditor
             error = null;
             createdNode = null;
 
-            
-            XmlNode newNode = childType switch
-            {
-                NodeType.Element => document.CreateElement(@string),
-                NodeType.Text => document.CreateTextNode(@string),
-                NodeType.CDATA => document.CreateCDataSection(@string),
-                NodeType.Comment => document.CreateComment(@string),
-                _ => throw new ArgumentException("Unsupported child type", nameof(childType)),
-            } ;
+
             try
             {
+                //@string = SecurityElement.Escape(@string);
+                XmlNode newNode = childType switch
+                {
+                    NodeType.Element => document.CreateElement(@string),
+                    NodeType.Text => document.CreateTextNode(@string
+                    ),
+                    NodeType.CDATA => document.CreateCDataSection(@string
+
+                        ),
+                    NodeType.Comment => document.CreateComment(@string),
+                    _ => throw new ArgumentException("Unsupported child type", nameof(childType)),
+                };
                 switch (position)
                 {
                     case < 0:
@@ -242,14 +247,14 @@ namespace Appeon.ComponentsApp.XmlEditor
         public static int MoveNodeUp(ref XmlNode node, out string? error)
         {
             error = null;
-            if (node.PreviousSibling is var sibling 
-                && sibling is null 
+            if (node.PreviousSibling is var sibling
+                && sibling is null
                 || sibling is XmlDeclaration)
             {
                 return 0;
             }
 
-            if(node.ParentNode is var parentNode 
+            if (node.ParentNode is var parentNode
                 && parentNode is null
                 )
             {
@@ -266,7 +271,7 @@ namespace Appeon.ComponentsApp.XmlEditor
                 error = e.Message;
                 return -1;
             }
-                        
+
             return 1;
         }
 

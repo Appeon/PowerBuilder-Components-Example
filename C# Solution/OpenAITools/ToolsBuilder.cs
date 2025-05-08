@@ -1,4 +1,4 @@
-﻿using OpenAI.Managers;
+﻿using Betalgo.Ranul.OpenAI.Managers;
 
 namespace Appeon.ComponentsApp.OpenAITools
 {

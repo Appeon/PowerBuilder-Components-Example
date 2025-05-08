@@ -1,7 +1,6 @@
 ﻿
 using FluentFTP;
 using PowerBuilderEventInvoker.DotNet;
-using System.Diagnostics.Tracing;
 
 namespace Appeon.ComponentsApp.FtpClientWrapper
 {
@@ -121,6 +120,8 @@ namespace Appeon.ComponentsApp.FtpClientWrapper
             string finishCallbackEvent,
             string progressCallbackEvent)
         {
+            EventInvoker.TestObjectEventInvokation(callbackObject);
+
             UploadFileInternal(ftpPath,
                 systemPath,
                 callbackObject,
@@ -146,8 +147,6 @@ namespace Appeon.ComponentsApp.FtpClientWrapper
                 ReportError("Specified file does not exist");
                 return;
             }
-
-            EventInvoker.TestObjectEventInvokation(callbackObject);
 
             try
             {

@@ -1,31 +1,31 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0",
+    "name": ".NETCoreApp,Version=v8.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {
+    ".NETCoreApp,Version=v8.0": {
       "Appeon.ComponentsApp.BarcodeGeneration/1.0.0": {
         "dependencies": {
-          "BarcodeLib": "3.0.3",
+          "BarcodeLib": "3.1.4",
           "Fare": "2.2.1"
         },
         "runtime": {
           "Appeon.ComponentsApp.BarcodeGeneration.dll": {}
         }
       },
-      "BarcodeLib/3.0.3": {
+      "BarcodeLib/3.1.4": {
         "dependencies": {
-          "SkiaSharp": "2.88.6",
-          "SkiaSharp.NativeAssets.Linux.NoDependencies": "2.88.6",
-          "System.Resources.Extensions": "7.0.0",
-          "System.Text.Json": "7.0.3"
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.NativeAssets.Linux.NoDependencies": "2.88.8",
+          "System.Resources.Extensions": "8.0.0",
+          "System.Text.Json": "8.0.4"
         },
         "runtime": {
           "lib/netstandard2.0/BarcodeStandard.dll": {
-            "assemblyVersion": "3.0.3.0",
-            "fileVersion": "3.0.3.0"
+            "assemblyVersion": "3.1.4.0",
+            "fileVersion": "3.1.4.0"
           }
         }
       },
@@ -37,21 +37,21 @@
           }
         }
       },
-      "SkiaSharp/2.88.6": {
+      "SkiaSharp/2.88.8": {
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.6",
-          "SkiaSharp.NativeAssets.macOS": "2.88.6"
+          "SkiaSharp.NativeAssets.Win32": "2.88.8",
+          "SkiaSharp.NativeAssets.macOS": "2.88.8"
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
             "assemblyVersion": "2.88.0.0",
-            "fileVersion": "2.88.6.0"
+            "fileVersion": "2.88.8.0"
           }
         }
       },
-      "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6": {
+      "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.8": {
         "dependencies": {
-          "SkiaSharp": "2.88.6"
+          "SkiaSharp": "2.88.8"
         },
         "runtimeTargets": {
           "runtimes/linux-arm/native/libSkiaSharp.so": {
@@ -76,7 +76,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.6": {
+      "SkiaSharp.NativeAssets.macOS/2.88.8": {
         "runtimeTargets": {
           "runtimes/osx/native/libSkiaSharp.dylib": {
             "rid": "osx",
@@ -85,7 +85,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.6": {
+      "SkiaSharp.NativeAssets.Win32/2.88.8": {
         "runtimeTargets": {
           "runtimes/win-arm64/native/libSkiaSharp.dll": {
             "rid": "win-arm64",
@@ -104,44 +104,18 @@
           }
         }
       },
-      "System.Resources.Extensions/7.0.0": {
+      "System.Resources.Extensions/8.0.0": {
         "runtime": {
-          "lib/net6.0/System.Resources.Extensions.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
+          "lib/net8.0/System.Resources.Extensions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "System.Text.Encodings.Web/7.0.0": {
+      "System.Text.Encodings.Web/8.0.0": {},
+      "System.Text.Json/8.0.4": {
         "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
-            "rid": "browser",
-            "assetType": "runtime",
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
-          }
-        }
-      },
-      "System.Text.Json/7.0.3": {
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encodings.Web": "7.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.723.27404"
-          }
+          "System.Text.Encodings.Web": "8.0.0"
         }
       }
     }
@@ -152,12 +126,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BarcodeLib/3.0.3": {
+    "BarcodeLib/3.1.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5aDPRVhFwzZpZFm7Zsj69aZb6xkbDwxJqbjKICg4545/qza/fXG23KdvXJBoveutTDmIAt9ZBTgYct2OCPjq4A==",
-      "path": "barcodelib/3.0.3",
-      "hashPath": "barcodelib.3.0.3.nupkg.sha512"
+      "sha512": "sha512-S45/MlvoXh7SMDCaM0BemUywSmixO3jJxCHfZJzLrCn/Faugnf5PaCpVmskzSyLBMyWJRcP3X26/p/QSYxawEg==",
+      "path": "barcodelib/3.1.4",
+      "hashPath": "barcodelib.3.1.4.nupkg.sha512"
     },
     "Fare/2.2.1": {
       "type": "package",
@@ -166,61 +140,54 @@
       "path": "fare/2.2.1",
       "hashPath": "fare.2.2.1.nupkg.sha512"
     },
-    "SkiaSharp/2.88.6": {
+    "SkiaSharp/2.88.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wdfeBAQrEQCbJIRgAiargzP1Uy+0grZiG4CSgBnhAgcJTsPzlifIaO73JRdwIlT3TyBoeU9jEqzwFUhl4hTYnQ==",
-      "path": "skiasharp/2.88.6",
-      "hashPath": "skiasharp.2.88.6.nupkg.sha512"
+      "sha512": "sha512-bRkp3uKp5ZI8gXYQT57uKwil1uobb2p8c69n7v5evlB/2JNcMAXVcw9DZAP5Ig3WSvgzGm2YSn27UVeOi05NlA==",
+      "path": "skiasharp/2.88.8",
+      "hashPath": "skiasharp.2.88.8.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6": {
+    "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ecgMclPor+X1wi2dZSVDo1sV2Dm8gwEKNRtS+qiE9qfnQzGHbYWlbTBWalnZBaIl3BLC21b1QO8gMgabhSAh+g==",
-      "path": "skiasharp.nativeassets.linux.nodependencies/2.88.6",
-      "hashPath": "skiasharp.nativeassets.linux.nodependencies.2.88.6.nupkg.sha512"
+      "sha512": "sha512-/DoKtdyvRgCC5GR/SH+ps3ZiOjmf0BYpAyrhWQELFOO1hdcqddrDVJjDNCOJ41vV+NlS5b3kcDoZZ7jLhFjyXg==",
+      "path": "skiasharp.nativeassets.linux.nodependencies/2.88.8",
+      "hashPath": "skiasharp.nativeassets.linux.nodependencies.2.88.8.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.macOS/2.88.6": {
+    "SkiaSharp.NativeAssets.macOS/2.88.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Sko9LFxRXSjb3OGh5/RxrVRXxYo48tr5NKuuSy6jB85GrYt8WRqVY1iLOLwtjPiVAt4cp+pyD4i30azanS64dw==",
-      "path": "skiasharp.nativeassets.macos/2.88.6",
-      "hashPath": "skiasharp.nativeassets.macos.2.88.6.nupkg.sha512"
+      "sha512": "sha512-6Kn5TSkKlfyS6azWHF3Jk2sW5C4jCE5uSshM/5AbfFrR+5n6qM5XEnz9h4VaVl7LTxBvHvMkuPb/3bpbq0vxTw==",
+      "path": "skiasharp.nativeassets.macos/2.88.8",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.8.nupkg.sha512"
     },
-    "SkiaSharp.NativeAssets.Win32/2.88.6": {
+    "SkiaSharp.NativeAssets.Win32/2.88.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7TzFO0u/g2MpQsTty4fyCDdMcfcWI+aLswwfnYXr3gtNS6VLKdMXPMeKpJa3pJSLnUBN6wD0JjuCe8OoLBQ6cQ==",
-      "path": "skiasharp.nativeassets.win32/2.88.6",
-      "hashPath": "skiasharp.nativeassets.win32.2.88.6.nupkg.sha512"
+      "sha512": "sha512-O9QXoWEXA+6cweR4h3BOnwMz+pO9vL9mXdjLrpDd0w1QzCgWmLQBxa1VgySDITiH7nQndrDG1h6937zm9pLj1Q==",
+      "path": "skiasharp.nativeassets.win32/2.88.8",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.8.nupkg.sha512"
     },
-    "System.Resources.Extensions/7.0.0": {
+    "System.Resources.Extensions/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-65ufm9ABXvxRkQ//hMcUDrQXbGWkC7z0WWZAvHlQ6Qv+JmrIwHH1lmX8aXlNlXpIrT9KxDpuZPqJTVqqwzMD8Q==",
-      "path": "system.resources.extensions/7.0.0",
-      "hashPath": "system.resources.extensions.7.0.0.nupkg.sha512"
+      "sha512": "sha512-psnQ6GRQOvt+evda5C4nD5EuV49mz2Tv0DD2JDVDEbE/TKoMukxSkGJcsBJ0pajpPuFRr67syFYlkJ4Wj6A5Zw==",
+      "path": "system.resources.extensions/8.0.0",
+      "hashPath": "system.resources.extensions.8.0.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+    "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
-      "path": "system.runtime.compilerservices.unsafe/6.0.0",
-      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+      "sha512": "sha512-yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "path": "system.text.encodings.web/8.0.0",
+      "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/7.0.0": {
+    "System.Text.Json/8.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
-      "path": "system.text.encodings.web/7.0.0",
-      "hashPath": "system.text.encodings.web.7.0.0.nupkg.sha512"
-    },
-    "System.Text.Json/7.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AyjhwXN1zTFeIibHimfJn6eAsZ7rTBib79JQpzg8WAuR/HKDu9JGNHTuu3nbbXQ/bgI+U4z6HtZmCHNXB1QXrQ==",
-      "path": "system.text.json/7.0.3",
-      "hashPath": "system.text.json.7.0.3.nupkg.sha512"
+      "sha512": "sha512-bAkhgDJ88XTsqczoxEMliSrpijKZHhbJQldhAmObj/RbrN3sU5dcokuXmWJWsdQAhiMJ9bTayWsL1C9fbbCRhw==",
+      "path": "system.text.json/8.0.4",
+      "hashPath": "system.text.json.8.0.4.nupkg.sha512"
     }
   }
 }

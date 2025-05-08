@@ -1,5 +1,7 @@
-﻿using OpenAI.Managers;
-using OpenAI.ObjectModels;
+﻿
+using Betalgo.Ranul.OpenAI.Managers;
+using Betalgo.Ranul.OpenAI.ObjectModels;
+using Betalgo.Ranul.OpenAI.ObjectModels.RequestModels;
 using PowerBuilderEventInvoker.DotNet;
 
 namespace Appeon.ComponentsApp.OpenAITools
@@ -21,20 +23,20 @@ namespace Appeon.ComponentsApp.OpenAITools
         {
             error = null;
             completionResult = null;
-            var modelString = model is null ? null : GetModelFromPropertyName(model);
             try
             {
-                var result = service.Completions.CreateCompletion(new OpenAI.ObjectModels.RequestModels.CompletionCreateRequest()
+                var modelString = model;
+                var result = service.ChatCompletion.CreateCompletion(new Betalgo.Ranul.OpenAI.ObjectModels.RequestModels.ChatCompletionCreateRequest()
                 {
-                    Prompt = prompt,
-                    Model = modelString ?? Models.TextDavinciV3,
+                    Messages = new List<ChatMessage> { new ChatMessage() { Role = "user", Content = prompt } },
+                    Model = modelString ?? Models.Gpt_3_5_Turbo,
                     MaxTokens = 4000
                 }).Result;
 
                 if (result.Successful)
                 {
 
-                    completionResult = result.Choices.FirstOrDefault()?.Text;
+                    completionResult = result.Choices.FirstOrDefault()?.Message.Content;
                     return 1;
                 }
 

@@ -1,38 +1,48 @@
-﻿using OpenAI;
-using OpenAI.Managers;
+﻿using Betalgo.Ranul.OpenAI;
+using Betalgo.Ranul.OpenAI.Managers;
 
 namespace Appeon.ComponentsApp.OpenAITools
 {
-    public class OpenAiServiceContainer
+    public class OpenAiServiceBuilder
     {
-        public static OpenAIService? Instance { get; private set; }
+        public string? ApiKey { get; set; }
+        public string? Organization { get; set; }
 
-        public static void Init(
-            string apiKey,
-            string? organtization)
-        {
-            Instance ??= new OpenAIService(
-                new OpenAiOptions
-                {
-                    ApiKey = apiKey,
-                    Organization = organtization,
-                }
-                );
-        }
 
-        public static short TestService(out string? error)
+        public OpenAIService? Build(out string? error)
         {
             error = null;
-
-            if (Instance is null)
+            if (ApiKey is null)
             {
-                error = "Service is not initialized";
-                return -1;
+                error = "No API Key specified";
+                return null;
             }
 
             try
             {
-                lock (Instance)
+                return new OpenAIService(
+                        new OpenAIOptions
+                        {
+                            ApiKey = ApiKey,
+                            Organization = Organization,
+
+                        }
+                        );
+            }
+            catch (Exception e)
+            {
+                error = e.Message;
+                return null;
+            }
+        }
+
+        public static short TestService(OpenAIService service, out string? error)
+        {
+            error = null;
+
+            try
+            {
+                lock (service)
                 {
                     CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
                     var taskFinished = false;
@@ -54,7 +64,7 @@ namespace Appeon.ComponentsApp.OpenAITools
 
                     timeoutThread.Start();
 
-                    var models = Instance.ListModel(cancellationTokenSource.Token).Result;
+                    var models = service.ListModel(cancellationTokenSource.Token).Result;
                     taskFinished = true;
                     timeoutThread.Interrupt();
                     if (models is not null)

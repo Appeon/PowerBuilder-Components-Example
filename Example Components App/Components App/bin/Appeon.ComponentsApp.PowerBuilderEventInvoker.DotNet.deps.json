@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet/1.0.0": {
+        "dependencies": {
+          "pbdotnetinvoker": "1.0.8902.30587"
+        },
+        "runtime": {
+          "Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet.dll": {}
+        }
+      },
+      "pbdotnetinvoker/1.0.8902.30587": {
+        "runtime": {
+          "pbdotnetinvoker.dll": {
+            "assemblyVersion": "1.0.8902.30587",
+            "fileVersion": "22.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "pbdotnetinvoker/1.0.8902.30587": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

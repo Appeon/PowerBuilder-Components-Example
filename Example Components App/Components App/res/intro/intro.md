@@ -1,5 +1,7 @@
 # README - Import a .NET DLL into PowerBuilder
 
+You can download the source code for this project on [GitHub](https://github.com/Appeon/PowerBuilder-Components-Example).
+
 1. You can use the *.NET DLL Importer* tool to quickly enable the current PowerBuilder application to use .NET DLLs
 
 |                                                        |      |                                                              |

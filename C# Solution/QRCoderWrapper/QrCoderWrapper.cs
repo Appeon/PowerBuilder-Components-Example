@@ -5,11 +5,6 @@ namespace Appeon.ComponentsApp.QrCoderWrapper
 {
     public class QrCoderWrapper
     {
-        public static int GetQrAsBlob(string content, int ppm, out byte[]? graphic, out string? error)
-        {
-            return GetQrAsBlobInternal(content, ppm, QRCodeGenerator.ECCLevel.M, out graphic, out error);
-        }
-
         private static int GetQrAsBlobInternal(string content, int ppm, QRCodeGenerator.ECCLevel errorCorrection, out byte[]? graphic, out string? error)
         {
             try
@@ -34,12 +29,17 @@ namespace Appeon.ComponentsApp.QrCoderWrapper
             }
         }
 
+        public static int GetQrAsBlob(string content, int ppm, out byte[]? graphic, out string? error)
+        {
+            return GetQrAsBlobInternal(content, ppm, QRCodeGenerator.ECCLevel.M, out graphic, out error);
+        }
+
         public static int GetQrAsBlob(string content, short ppm, short errorCorrection, out byte[]? graphic, out string? error)
         {
             graphic = null;
             error = null;
 
-            if (!Enum.GetValues(typeof(QRCodeGenerator.ECCLevel))
+            if (!Enum.GetValues<QRCodeGenerator.ECCLevel>()
                 .Cast<QRCodeGenerator.ECCLevel>()
                 .Select(@enum => (short)@enum)
                 .Contains(errorCorrection))
@@ -48,7 +48,26 @@ namespace Appeon.ComponentsApp.QrCoderWrapper
                 return -1;
             }
 
-            return GetQrAsBlobInternal(content, ppm, (QRCodeGenerator.ECCLevel)errorCorrection, out graphic, out error);
+            try
+            {
+                QRCodeGenerator generator = new();
+                QRCodeData data = generator.CreateQrCode(content, (QRCodeGenerator.ECCLevel)errorCorrection);
+                var qrCode = new BitmapByteQRCode(data);
+                graphic = qrCode.GetGraphic(ppm);
+                if (graphic == null)
+                {
+                    error = "Could not generate graphic. Unknown error";
+                    return -1;
+                }
+                error = null;
+                return 1;
+            }
+            catch (Exception e)
+            {
+                graphic = null;
+                error = e.Message;
+                return -1;
+            }
         }
     }
 }

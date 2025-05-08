@@ -1,11 +1,11 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0",
+    "name": ".NETCoreApp,Version=v8.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {
+    ".NETCoreApp,Version=v8.0": {
       "Appeon.ComponentsApp.DdeTools/1.0.0": {
         "dependencies": {
           "Appeon.ComponentsApp.DdeTools.DdeClient": "1.0.0",
@@ -44,7 +44,10 @@
       },
       "Appeon.ComponentsApp.DdeTools.Common/1.0.0": {
         "runtime": {
-          "Appeon.ComponentsApp.DdeTools.Common.dll": {}
+          "Appeon.ComponentsApp.DdeTools.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Appeon.ComponentsApp.DdeTools.DdeClient/1.0.0": {
@@ -53,7 +56,10 @@
           "Specshell.NDde": "4.0.0"
         },
         "runtime": {
-          "Appeon.ComponentsApp.DdeTools.DdeClient.dll": {}
+          "Appeon.ComponentsApp.DdeTools.DdeClient.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Appeon.ComponentsApp.DdeTools.DdeServer/1.0.0": {
@@ -63,19 +69,25 @@
           "Specshell.NDde": "4.0.0"
         },
         "runtime": {
-          "Appeon.ComponentsApp.DdeTools.DdeServer.dll": {}
+          "Appeon.ComponentsApp.DdeTools.DdeServer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet/1.0.0": {
         "runtime": {
-          "Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet.dll": {}
+          "Appeon.ComponentsApp.PowerBuilderEventInvoker.DotNet.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "pbdotnetinvoker/1.0.8717.25981": {
+      "pbdotnetinvoker/1.0.8902.30587": {
         "runtime": {
           "pbdotnetinvoker.dll": {
-            "assemblyVersion": "1.0.8717.25981",
-            "fileVersion": "22.2.0.3238"
+            "assemblyVersion": "1.0.8902.30587",
+            "fileVersion": "22.2.0.0"
           }
         }
       }
@@ -135,7 +147,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "pbdotnetinvoker/1.0.8717.25981": {
+    "pbdotnetinvoker/1.0.8902.30587": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

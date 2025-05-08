@@ -8,9 +8,6 @@
           <Item Text="Exit" Enabled="true" Tag="" Visible="true" PictureName="ExitBig!" Checked="false" Type="0" Selected="" Clicked="ue_exitClicked" Shortcut="">
           </Item>
         </Master>
-        <Recent Title="">
-          <Item Text="" Enabled="true" Tag="" Visible="true" PictureName="" Checked="false" Type="2" Selected="" Clicked="" Shortcut="" />
-        </Recent>
       </ApplicationMenu>
     </ApplicationButton>
     <Categories>

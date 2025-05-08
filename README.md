@@ -1,6 +1,6 @@
 # PowerBuilder-Components-Example 
 
-This application demonstrates the utilization of [PowerBuilder 2022 R3](https://www.appeon.com/products/powerbuilder)'s .NET Assembly integration features such as: object instantiation, function calling with automatic native-type conversion and callback invocation to implement features not available in PowerBuilder (e.g. FTP File Transfer, QR Code generation, and more).
+This application demonstrates the utilization of [PowerBuilder 2025](https://www.appeon.com/products/powerbuilder)'s .NET Assembly integration features such as: object instantiation, function calling with automatic native-type conversion and callback invocation to implement features not available in PowerBuilder (e.g. FTP File Transfer, QR Code generation, and more).
 
 ## Project Structure
 
@@ -47,9 +47,9 @@ This project is composed of two entities, the PowerBuilder Workspace and a C# So
 
 Running this project requires the following pieces of software to be present on the machine:
 
-1. [PowerBuilder 2022 R3](https://www.appeon.com/products/powerbuilder) 
+1. [PowerBuilder 2025](https://www.appeon.com/products/powerbuilder) 
 2. [.NET Framework 4.8 Runtime ](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) 
-3. [.NET 6 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+3. [.NET 8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ## Setting up the project
 

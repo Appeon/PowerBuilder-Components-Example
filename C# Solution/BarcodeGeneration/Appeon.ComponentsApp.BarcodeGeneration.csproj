@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BarcodeLib" Version="3.0.3" />
+    <PackageReference Include="BarcodeLib" Version="3.1.4" />
     <PackageReference Include="Fare" Version="2.2.1" />
   </ItemGroup>
 

@@ -1,5 +1,5 @@
-﻿using OpenAI.Managers;
-using OpenAI.ObjectModels.RequestModels;
+﻿using Betalgo.Ranul.OpenAI.Managers;
+using Betalgo.Ranul.OpenAI.ObjectModels.RequestModels;
 using PowerBuilderEventInvoker.DotNet;
 using System.Text;
 using System.Text.Json;
